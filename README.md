@@ -1,49 +1,115 @@
-EMPLOYEE MANAGEMENT SYSTEM - CORE JAVA PROJECT
+# Employee Management System
 
-Features
---------
+A console-based Employee Management System developed using Core Java. This application allows users to manage employee records through a menu-driven interface and stores employee information in a local text file.
+
+## Features
+
+- **Add Employee:** Add a new employee with ID, name, department and salary.
+- **View Employees:** Display all stored employee records.
+- **Search Employee:** Find an employee using their unique ID.
+- **Update Employee:** Modify an existing employee's name, department and salary.
+- **Delete Employee:** Remove an employee record using their ID.
+- **File Persistence:** Automatically save employee records to `employees.txt` and load existing records when the application starts.
+- **Duplicate ID Prevention:** Prevent adding employees with an existing ID.
+- **Input Validation:** Validate employee IDs, salary values and text inputs.
+
+## Technologies Used
+
+- Java (Core Java)
+- Java Collections Framework (`ArrayList`)
+- Java File Handling (`BufferedReader`, `BufferedWriter`, `Files`)
+- Exception Handling
+- VS Code / Any Java IDE
+
+## Project Structure
+
+```text
+Employee-Management-System/
+│
+├── Main.java
+├── Employee.java
+├── EmployeeManager.java
+├── employees.txt
+├── README.md
+└── .gitignore
+```
+
+## Java Concepts Implemented
+
+- Classes and Objects
+- Encapsulation
+- Constructors
+- Getters and Setters
+- ArrayList
+- CRUD Operations
+- Methods and Loops
+- Conditional Statements and Switch
+- Exception Handling (try-catch)
+- File Handling and Data Persistence
+- Input Validation
+
+## How to Run the Project
+
+**Prerequisite:** JDK 8 or later installed on your system.
+
+1. Clone or download this repository.
+2. Open the project folder in VS Code or any Java IDE.
+3. Open the terminal in the project directory.
+4. Compile the Java files:
+
+```bash
+javac Employee.java EmployeeManager.java Main.java
+```
+
+5. Run the application:
+
+```bash
+java Main
+```
+
+## Application Menu
+
+```text
+==================================
+     EMPLOYEE MANAGEMENT SYSTEM
+==================================
+
+----------- MENU -----------
 1. Add employee
 2. View all employees
 3. Search employee by ID
 4. Update employee
 5. Delete employee
-6. Save records to employees.txt and load them when the program starts
+6. Exit
+----------------------------
+```
 
-Concepts demonstrated
----------------------
-- Classes and objects
-- Encapsulation (private fields and getters/setters)
-- ArrayList
-- CRUD operations
-- File handling (BufferedReader and BufferedWriter)
-- Exception handling (try/catch)
-- Input validation
-- Methods and loops
+## Data Storage
 
-Requirements
-------------
-- JDK 8 or later
-- Any Java IDE (IntelliJ IDEA, Eclipse, or VS Code with Java extensions)
-  OR a terminal with javac and java available
+Employee records are stored in a local text file named `employees.txt`.
 
-Run from a terminal
--------------------
-1. Extract the ZIP file.
-2. Open a terminal in the extracted EmployeeManagementSystem folder.
-3. Compile:
+Each employee record follows this format:
 
-   javac Employee.java EmployeeManager.java Main.java
+```text
+ID|Name|Department|Salary
+```
 
-4. Run:
+Example:
 
-   java Main
+```text
+101|DIVYANSHI|IT|50000.0
+```
 
-The program creates employees.txt in the current working directory after
-you add or modify employee records. Keep this file in the same directory
-when you run the application again so saved records can be loaded.
+The application loads existing records when it starts and saves changes whenever an employee is added, updated or deleted.
 
-Important
----------
-This is a beginner console-based academic project. It uses a text file,
-not a database. It is not a production HR/payroll system. If asked in an
-interview, explain the code you have personally understood and tested.
+## Important Note
+
+This is a beginner-level, console-based Java project demonstrating object-oriented programming, CRUD operations and file handling.
+
+It uses local text-file storage instead of a database and does not include a graphical user interface or web application.
+
+## Author
+
+**Divyanshi Sahu**
+
+GitHub: https://github.com/DivyanshiSahu1011
